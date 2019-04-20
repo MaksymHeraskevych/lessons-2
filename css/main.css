@@ -1,0 +1,21 @@
+*{
+	box-sizing: border-box;
+}
+
+.block{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+}
+
+.square{
+	width: 200px;
+	height: 200px;
+	margin: 20% auto;
+	border: 2px  solid red;
+}
+
+.area{
+	border-radius: 50%;
+}

@@ -4,38 +4,31 @@
 	<meta charset="UTF-8">
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Lessons2</title>
+	<title>Lessons3</title>
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
+	<div class="block">
 	
+		<p>Круг: 
+		<input type="radio" class="radio1" name="change"><br>
+		<label for="myNumber">Меняем ширину блока</label>
+		<input id="myNumber" type="number" value="200" min="50" max="400" step="50">
+		 </p> 
+
+		<div class="square"></div>
+
+		 <p>Квадрат:
+		<input type="radio" class="radio1" name="change" checked=""><br>	
+		<label for="myNumber">Меняем ширину блока</label>
+		<input id="myNumber" type="number" value="200" min="50" max="400" step="50">
+		</p>
+
+	</div>
+
 	<script src="js/main.js"></script>
 </body>
 </html>
 
-0. Напиши функцию map(fn, array), которая принимает на вход функцию и массив, и обрабатывает каждый элемент массива этой функцией, возвращая новый массив.
 
-1. Напиши функцию создания генератора sequence(start, step). Она при вызове возвращает другую функцию-генератор, которая при каждом вызове дает число на 1 больше, и так до бесконечности. Начальное число, с которого начинать отсчет, и шаг, задается при создании генератора. Шаг можно не указывать, тогда он будет равен одному. Начальное значение по умолчанию равно 0. Генераторов можно создать сколько угодно.
-ПРИМЕР:
-var generator = sequence(10, 3);
-var generator2 = sequence(7, 1);
-
-console.log(generator()); // 10
-console.log(generator()); // 13
-
-console.log(generator2()); // 7
-
-console.log(generator()); // 16
-
-console.log(generator2()); // 8
-
-    2. Также, нужна функция take(gen, x) которая вызвает функцию gen заданное число (x) раз и возвращает массив с результатами вызовов.
-var gen2 = sequence(0, 2);
-console.log(take(gen2, 5)); // [0, 2, 4, 6, 8 ]
-
-    3. напиши функцию pluck, которая берет массив объектов и возвращает массив значений определенного поля:
-var characters = [
- { ‘name’: ‘barney’, ‘age’: 36 },
- { ‘name’: ‘fred’, ‘age’: 40 }
-];
-
-console.log(pluck(characters, ‘name’)); // [‘barney’, ‘fred’]
