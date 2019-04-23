@@ -7,13 +7,15 @@
 	margin: auto;
 	display: flex;
 	justify-content: space-around;
+	position: relative;
 }
 
 .square{
+	position: absolute;
 	width: 200px;
 	height: 200px;
 	margin: 20% auto;
-	border: 2px  solid red;
+	border: 2px  solid black;
 }
 
 .area{
